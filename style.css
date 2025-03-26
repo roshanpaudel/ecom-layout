@@ -1,0 +1,55 @@
+.parent {
+  display: grid;
+  background: white;
+  color: white;
+  height: 100vh;
+  gap: 1rem;
+
+  grid-template-areas:
+    "i1 i1 i1"
+    "i2 i2 i2"
+    "i3 i3 i4"
+    "i3 i3 i5"
+    "i6 i9 i9"
+    "i7 i9 i9"
+    "i8 i9 i9"
+    "i10 i10 i10";
+}
+.parent > div {
+  background: red;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-1 {
+  grid-area: i1;
+  margin: 1rem 0rem;
+}
+.item-2 {
+  grid-area: i2;
+}
+.item-3 {
+  grid-area: i3;
+}
+.item-4 {
+  grid-area: i4;
+}
+.item-5 {
+  grid-area: i5;
+}
+.item-6 {
+  grid-area: i6;
+}
+.item-7 {
+  grid-area: i7;
+}
+.item-8 {
+  grid-area: i8;
+}
+.item-9 {
+  grid-area: i9;
+}
+.item-10 {
+  grid-area: i10;
+}
