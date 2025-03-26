@@ -2,7 +2,7 @@
   display: grid;
   background: white;
   color: rgb(0, 0, 0);
-  height: 100vh;
+  height: 90vh;
   gap: 1rem;
 
   grid-template-areas:
@@ -61,4 +61,40 @@
 .item-10 {
   grid-area: i10;
   background-color: goldenrod;
+}
+
+@media (max-width: 992px) {
+  .parent {
+    grid-template-areas:
+      "i1 i1 "
+      "i2 i2 "
+      "i3 i3 "
+      "i3 i3"
+      "i4 i5"
+      "i6 i6"
+      "i9 i9"
+      "i9 i9"
+      "i7 i8"
+      "i10 i10";
+  }
+}
+@media (max-width: 542px) {
+  .parent {
+    grid-template-areas:
+      "i1"
+      "i2"
+      "i3"
+      "i3"
+      "i3"
+      "i3"
+      "i4 "
+      "i5"
+      "i6"
+      "i9"
+      "i9"
+      "i9"
+      "i8"
+      "i7"
+      "i10";
+  }
 }
